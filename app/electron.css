@@ -1,0 +1,37 @@
+@keyframes move {
+    from {
+        offset-distance: var(--start);
+    }
+
+    to {
+        offset-distance: calc(var(--start) + 100%);
+    }
+}
+
+.electron {
+    /* shape */
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+
+    /* animation */
+    --start: calc(sibling-index() * 15%);
+    offset-path: circle(50%);
+    animation: move 5s linear infinite;
+
+    /* colours */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+
+    transition:
+        opacity 0.5s ease-out,
+        width 0.2s ease-out,
+        height 0.2s ease-out;
+    transition-behavior: allow-discrete;
+
+    @starting-style {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}

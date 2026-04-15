@@ -1,0 +1,29 @@
+.configuration-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 340px;
+}
+
+.configuration {
+    font-family: SpaceGrotesk;
+    font-size: 2.3rem;
+    font-weight: 630;
+
+    caret-color: oklch(0.4 0 0);
+    caret-shape: block;
+
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border-radius: 6px;
+    color: oklch(0.35 0 0);
+    border: none;
+    box-shadow: 0 1px 4px -3px;
+    text-align: center;
+    background-color: white;
+}
+
+.configuration-label {
+    font-size: 1rem;
+    font-weight: 400;
+}

@@ -1,0 +1,33 @@
+.legend {
+    font-size: 1rem;
+}
+.keys {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.title {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.key {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    font-weight: 380;
+}
+
+.level {
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.one {
+    background-color: var(--shell-level-1-colour);
+}
+
+.two {
+    background-color: var(--shell-level-2-colour);
+}

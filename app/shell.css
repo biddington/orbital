@@ -1,0 +1,32 @@
+.shell {
+    --max-diameter: 200px;
+    --scale-per-shell-index: calc(1 / sibling-count());
+    --shell-scale: calc(var(--scale-per-shell-index) * sibling-index());
+    --diameter: calc(var(--max-diameter) * var(--shell-scale));
+
+    position: absolute;
+    /* So the larger subsequent shells end up "underneath" the previous smaller ones */
+    z-index: calc(10 - sibling-index());
+    transition:
+        width 0.3s cubic-bezier(0.03, 1.65, 0.35, 0.87),
+        height 0.3s cubic-bezier(0.03, 1.65, 0.35, 0.87),
+        opacity 0.3s,
+        transform 0.3s;
+    border-radius: 50%;
+    width: var(--diameter);
+    height: var(--diameter);
+
+    @starting-style {
+        opacity: 0;
+        width: calc(var(--diameter) * 1.1);
+        transform: translateY(10px);
+    }
+}
+
+._1 {
+    background-color: var(--shell-level-1-colour);
+}
+
+._2 {
+    background-color: var(--shell-level-2-colour);
+}
