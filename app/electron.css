@@ -29,6 +29,17 @@
         height 0.2s ease-out;
     transition-behavior: allow-discrete;
 
+    .s &:nth-child(n + 3) {
+        background-image: linear-gradient(black 50%, white 50%);
+        border: 1px solid black;
+        transform: rotate(90deg);
+    }
+
+    .p &:nth-child(n + 7) {
+        background-image: radial-gradient(black 50%, white 50%);
+        border: 1px solid black;
+    }
+
     @starting-style {
         opacity: 0;
         width: 0px;

@@ -1,6 +1,10 @@
 .legend {
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
 .keys {
     display: flex;
     gap: 1.75rem;
@@ -19,8 +23,8 @@
 }
 
 .level {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 7px;
 }
 
@@ -30,4 +34,16 @@
 
 .two {
     background-color: var(--shell-level-2-colour);
+}
+
+.invalid-p-electron {
+    background-image: linear-gradient(black 50%, white 50%);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.invalid-s-electron {
+    background-image: radial-gradient(black 50%, white 50%);
+    border: 1px solid black;
+    border-radius: 50%;
 }
