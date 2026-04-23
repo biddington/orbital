@@ -45,8 +45,7 @@ const Root = () => {
 
       <Legend />
 
-      <ConfigurationInput value={expr} onKeyUp={setExpr} />
-      {error && error}
+      <ConfigurationInput value={expr} onKeyUp={setExpr} error={error} />
     </>
   );
 };

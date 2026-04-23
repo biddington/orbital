@@ -4,9 +4,11 @@ import "./configurationinput.css";
 const ConfigurationInput = ({
   value,
   onKeyUp,
+  error,
 }: {
   value: string;
   onKeyUp: Dispatch<SetStateAction<string>>;
+  error: string;
 }) => {
   return (
     <div className="configuration-layout">
@@ -19,6 +21,12 @@ const ConfigurationInput = ({
         value={value}
         onChange={(e) => onKeyUp(e.target.value)}
       />
+      <div
+        style={{ display: error ? "block" : "none" }}
+        className="configuration-error"
+      >
+        {error}
+      </div>
     </div>
   );
 };

@@ -98,7 +98,9 @@ class Tokeniser {
         if (/\s/.test(char)) {
           return Ok(this.Token("SPACE", null));
         } else {
-          return Err<BadToken>(`Unrecognised character ${char}`);
+          return Err<BadToken>(
+            `Invalid character "${char}" at position ${this.current}`,
+          );
         }
     }
   }

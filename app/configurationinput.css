@@ -27,3 +27,15 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+.configuration-error {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    transition: opacity 0.2s;
+    transition-behavior: allow-discrete;
+
+    @starting-style {
+        opacity: 0;
+    }
+}
