@@ -1,5 +1,7 @@
 # Orbital
 
+[https://bhoring.netlify.app](https://bhoring.netlify.app)
+
 Orbital is a compiler and web app for Bohr-like visualistions of [electron configurations](https://en.wikipedia.org/wiki/Electron_configuration). The focus of the project being more about the design, interaction and easthetics than engineering or architecture, so there are definitely some shortcomings. 
 
 Because the intention is to create somewhat of a learning app, not a strict compiler, it's possible to enter invalid electron configurations. The project currently only supports the first two levels of the periodic table (H -> Ne).
