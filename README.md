@@ -1,6 +1,6 @@
 # Orbital
 
-[https://bhoring.netlify.app](https://bhoring.netlify.app)
+[https://bhoring.netlify.app](https://bhoring.netlify.app) Use Chrome/Edge. Firefox doesn't yet support the `sibling-index()` or `sibling-count()` CSS functions.
 
 Orbital is a compiler and web app for Bohr-like visualistions of [electron configurations](https://en.wikipedia.org/wiki/Electron_configuration). The focus of the project being more about the design, interaction and easthetics than engineering or architecture, so there are definitely some shortcomings. 
 
